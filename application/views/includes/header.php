@@ -70,6 +70,7 @@
             		
             <li> <a class="dropdown-item" href="<?php echo site_url("online-donation"); ?>" title="Online Donation"> Donation </a> </li>
           <li> <a class="dropdown-item" href="<?php echo site_url("online-chola-booking"); ?>" title="Chola Booking"> Chola Booking </a> </li> 
+          <li> <a class="dropdown-item" href="<?php echo site_url("online-chola-booking"); ?>" title="Bhog Booking"> Bhog Booking </a> </li> 
             
             <li> <a class="dropdown-item" href="<?php echo site_url("room-booking"); ?>" title="Room Bookings"> Room Bookings </a> </li>
             

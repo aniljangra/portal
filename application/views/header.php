@@ -71,6 +71,7 @@
             		
             <li> <a class="dropdown-item" href="<?php echo site_url("online-donation"); ?>" title="Online Donation"> Donation </a> </li>
             <li> <a class="dropdown-item" href="<?php echo site_url("online-chola-booking"); ?>" title="Chola Booking"> Chola Booking </a> </li>
+            <li> <a class="dropdown-item" href="<?php echo site_url("online-bhog-booking"); ?>" title="Bhog Booking"> Bhog Booking </a> </li>
             
             
             
@@ -81,6 +82,7 @@
             <li><a class="dropdown-item" href="<?php echo site_url('my-profile'); ?>" title="User Profile">User Profile</a></li>
            <li><a class="dropdown-item" href="<?php echo site_url('transactions/donation'); ?>" title="Donation Transactions">Donation Transactions</a></li>
           <li><a class="dropdown-item" href="<?php echo site_url('transactions/chola-booking'); ?>" title="Chola Booking Transactions">Chola Booking Transactions</a></li>
+          <li><a class="dropdown-item" href="<?php echo site_url('transactions/bhog-booking'); ?>" title="Bhog Booking Transactions">Bhog Booking Transactions</a></li>
           
           <li><a class="dropdown-item" href="<?php echo site_url('transactions/room-booking'); ?>" title="Room Booking Transactions">Room Booking Transactions</a></li>
           <!--

@@ -112,6 +112,10 @@ ddsmoothmenu.init({
           <div class="icon"><img src="images/box_img3.png"></div>
           <span>Online<br>
           Chola Booking</span> </a> </li>
+          <li style="height:160px"> <a href="https://www.mansadevi.org.in/portal/online-bhog-booking" target="_blank">
+          <div class="icon"><img src="images/box_img3.png"></div>
+          <span>Online<br>
+          Bhog Booking</span> </a> </li>
         <li style="height:160px"> <a href="https://mansadevi.org" target="_blank">
           <div class="icon"><img src="images/box_img4.png"></div>
           <span>Online<br>

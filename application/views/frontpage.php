@@ -56,6 +56,10 @@
         </div>
        </div>
 <div class="row">
+
+   <div class="col-md-6">
+          <div class="dash_box"> <a href="<?php echo site_url("online-bhog-booking")  ?>">Bhog Booking</a> </div>
+        </div>
       
       	<div class="col-md-6">
           <div class="dash_box"> <a href="<?php echo site_url("room-booking")  ?>">Online Room Booking</a> </div>
