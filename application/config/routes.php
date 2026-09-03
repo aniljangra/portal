@@ -59,6 +59,35 @@ $route['online-chola-booking/no-response']='Cholapage_Controller/no_response';
 $route['cholaverify']='Cholaverify/index';
 
 
+/*********** Bhog Booking *************/
+
+$route['online-bhog-booking'] = 'Bhogpage_Controller/bhog_booking_step';
+
+$route['online-bhog-booking/step1'] = 'Bhogpage_Controller/bhog_booking_step1';
+
+$route['online-bhog-booking/step2/(:any)'] = 'Bhogpage_Controller/bhog_booking_step2/$1';
+
+$route['online-bhog-booking/verify-otp/(:any)'] = 'Bhogpage_Controller/bhog_booking_verifyotp/$1';
+
+#$route['online-bhog-booking/step3/(:any)'] = 'Bhogpage_Controller/bhog_booking_step1_1/$1';
+
+$route['online-bhog-booking/overview/(:any)'] = 'Bhogpage_Controller/bhog_booking_payment/$1';
+
+$route['online-bhog-booking/success'] = 'Bhogpage_Controller/payment_status_bhog';
+
+$route['online-bhog-booking/success/(:any)'] = 'Bhogpage_Controller/bhog_status_preview/$1';
+
+$route['online-bhog-booking/failure'] = 'Bhogpage_Controller/bhogpayment_failure';
+
+$route['online-bhog-booking/status/(:any)'] = 'Bhogpage_Controller/bhogpayment_status/$1';
+
+$route['online-bhog-booking/worldline/response'] = 'Bhogpage_Controller/worldline_bhog_response';
+
+$route['online-bhog-booking/no-response'] = 'Bhogpage_Controller/no_response';
+
+$route['bhogverify'] = 'Bhogverify/index';
+
+
 
 /*********** Hawan Booking **************/
 $route['hawan-booking']='Hawanpage_Controller/hawan_booking_step1';
