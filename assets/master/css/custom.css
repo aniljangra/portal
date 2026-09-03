@@ -1,0 +1,51 @@
+.admin-left-block{background:#E3E3E3;}
+.admin-left-block h2{padding-top:80px;}
+.error-form{color:#ff0000; font-size:13px;}
+.my-5{margin-top:5em!important;}
+.sidebar .nav-item .nav-link span {
+    font-size: 14px;
+    display: inline;
+}
+.form-page{background:#fff; padding:10px;}
+.note{font-size:12px;}
+.ad-profile label{font-weight:700;}
+.inner-section{background:#fff; padding:10px;}
+.tender-form .error1{color:#ff0000; font-size:13px;}
+.tender-form label{font-weight:700;}
+.req{color:#ff0000;font-size:13px; font-weight:400;}
+.imgpic{width:80px;}
+.error-form{color:#ff0000; font-size:13px;}
+.error1 p{color:#ff0000; font-size:13px;}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -86px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.formAdmin .error1{color:#ff0000; font-size:14px;}
+.mainhead{background:#6685DD; padding:7px 10px;font-size:17px;  color:#fff; margin-bottom:20px;}
+.tbheadrow{background:#EAECF4; padding:7px 10px;font-size:17px;  color:#333;}
+.nav_ad{margin-left:0px; padding-left:0px;}
+.nav_ad li{background:#3F62C7; color:#fff; padding:5px 10px; list-style:none; display:inline;}
+.nav_ad li.active{background:#1C3D9C;}
+.nav_ad li a{color:#fff;}
+.doxbox{background:#f1f1f1; padding:10px; margin-bottom:20px; border:1px solid #ccc;}
+.instAddForm .error1{font-size:12px!important; color:#ff0000;!important}
+.doc_preview{margin-top:35px;}
+.emp_title{font-size:12px;}
