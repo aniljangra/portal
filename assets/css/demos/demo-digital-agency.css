@@ -1,0 +1,45 @@
+<?php
+//============================================================+
+// File name   : example_065.php
+// Begin       : 2011-09-28
+// Last Update : 2013-05-14
+//
+// Description : Example 065 for TCPDF class
+//               Creates an example PDF/A-1b document using TCPDF
+//
+// Author: Nicola Asuni
+//
+// (c) Copyright:
+//               Nicola Asuni
+//               Tecnick.com LTD
+//               www.tecnick.com
+//               info@tecnick.com
+//============================================================+
+
+/**
+ * Creates an example PDF/A-1b document using TCPDF
+ * @package com.tecnick.tcpdf
+ * @abstract TCPDF - Example: PDF/A-1b mode
+ * @author Nicola Asuni
+ * @since 2011-09-28
+ */
+
+// Include the main TCPDF library (search for installation path).
+require_once('tcpdf_include.php');
+
+// create new PDF document
+$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false, true);
+
+// set document information
+$pdf->SetCreator(PDF_CREATOR);
+$pdf->SetAuthor('Nicola Asuni');
+$pdf->SetTitle('TCPDF Example 065');
+$pdf->SetSubject('TCPDF Tutorial');
+$pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+
+// set default header data
+$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 065', PDF_HEADER_STRING);
+
+// set header and footer fonts
+$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+$pdf->setFooterFont(Array(PDF

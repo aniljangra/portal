@@ -1,0 +1,656 @@
+/* Add here all your CSS customizations */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;1,400;1,500&display=swap');
+#footer {
+	background:#a40709;
+	border:none;
+}
+.header-top {
+	background-color:#A3070A !important;
+}
+#footer p {
+	line-height:18px;
+	color:#cacaca;
+}
+#header .header-nav {
+}
+.header-nav-top li a i {
+	padding-left:10px!important;
+}
+#header .header-nav-top .nav > li > a span {
+	color:#fff;
+}
+.list-custom .fas {
+	color:#cb7246!important;
+}
+.regform .note {
+	font-size:12px;
+	font-weight:400;
+}
+.regform label {
+	color:#333333;
+	font-weight:600;
+}
+.regform .req {
+	color:#ff0000;
+	font-size:11px;
+}
+.regform .form-control {
+	border-color:#B3B3B3;
+}
+.checklabel {
+	padding-right:10px;
+	font-weight:400!important;
+	font-size:14px;
+}
+.panel-info>.panel-heading {
+	color:#fff;
+	background-color:#F9B4A6;
+	border-color:#E68388;
+}
+.panel-heading {
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.panel-body {
+	padding: 15px;
+}
+.panel-info {
+	border-color:#F9B4A6!important;
+}
+.panel {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.loginform .form-control {
+	border:1px solid #d3d3d3;
+}
+.loginform label {
+	color:#333333;
+	font-weight:600;
+	font-size:14px;
+}
+.loginform .note {
+	font-size:12px;
+	font-weight:400;
+}
+.loginform .error {
+	color:#ff0000;
+	font-size:13px;
+}
+.loginform .req {
+	color:#ff0000;
+	font-size:11px;
+}
+.regform .panel-body {
+	background:#FCFCFC;
+}
+.regform .error {
+	color:#ff0000;
+	font-size:13px;
+}
+.note_box {
+	background:#f1f1f1;
+	padding:10px;
+	margin-bottom:10px;
+}
+.note_box p {
+	font-size:13px;
+	line-height:18px;
+}
+.registration-page .page-title {
+	background:#4E8936;
+	padding:5px 10px;
+}
+.registration-page .page-title h2 {
+	text-align:center;
+	font-size:20px;
+	margin-bottom:0px;
+	color:#fff;
+	font-weight:600;
+}
+.reg_success_box {
+	background:#B7D0AE;
+	padding:10px;
+}
+.reg_success_box p {
+	color:#333;
+}
+.reglogin_back {
+	color:#fff;
+	background:#018717;
+	padding:6px 10px;
+}
+.reglogin_back:hover {
+	color:#fff;
+	background:#349D46;
+	padding:6px 10px;
+	text-decoration:none;
+}
+.btn-login {
+	background:#A73C3C!important;
+	color:#fff;
+	border:1px solid #be6464!important;
+	font-size:16px!important;
+}
+.forgot_link {
+	color:#969696;
+	font-size:13px;
+}
+.forgot_link:hover {
+	color:#be6464;
+}
+.btn-login:hover {
+	background:#be6464!important;
+	color:#fff;
+	border:1px solid #be6464!important;
+	font-size:16px!important;
+}
+.btn-apply {
+	background:#A73C3C!important;
+	color:#fff;
+	border:1px solid #be6464!important;
+	font-size:15px!important;
+}
+.btn-apply:hover {
+	background:#be6464!important;
+	color:#fff;
+	border:1px solid #be6464!important;
+	font-size:15px!important;
+}
+.welcome-info a span {
+	color:#cb7246;
+}
+.td_small {
+	font-size:12px;
+	font-weight:400;
+}
+.table-reg-custom th {
+	background:#f1f1f1;
+}
+.reg-pre-head {
+	font-size:18px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:20px;
+	color:#AD4D4D;
+}
+.confirmaion-step1 {
+	background:#E0E1E3;
+	color:#000;
+	padding:15px;
+	margin-bottom:20px;
+	border:1px solid #CEADAD;
+}
+.confirmaion-step1 p.noteinfo {
+	line-height:20px;
+	color:#000;
+}
+.btn_custom_step1 {
+	padding:5px 7px;
+	margin-right:12px;
+	background:#be6464!important;
+	border:1px solid #B95252!important;
+}
+.e-page-title h3 {
+	color:#A3070A;
+	font-size:20px;
+	margin-bottom:14px;
+	text-align:center;
+	font-weight:600;
+}
+.regpre label {
+	margin-bottom:0px;
+}
+.regpre p {
+	margin-bottom:10px;
+}
+.custom-qtable th {
+	background:#f2f2f2;
+}
+.custom-qtable td {
+	line-height:18px;
+}
+.note_list {
+	margin-left:0px;
+	padding:0px;
+	margin-left:15px;
+}
+p.attention {
+	margin-bottom:5px;
+	color:#E07B73;
+}
+.docup .panel-heading label {
+	line-height:20px;
+	font-weight:600;
+}
+.docup .panel-heading label span {
+	font-weight:400;
+}
+.doxbox {
+	background:#f2f2f2;
+	padding:10px;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+}
+.btn_upload {
+	padding:3px 8px;
+	background:#606060!important;
+	color:#fff;
+	border:1px solid #939393!important;
+}
+.btn_upload:hover {
+	background:#6C6C6C!important;
+}
+.doc_preview {
+	text-align:center;
+	font-size:13px;
+	padding-top:35px;
+}
+.doc_preview a {
+	color:#12AC57;
+}
+.doxbox label {
+	line-height:18px;
+	margin-bottom:10px;
+}
+.error p {
+	font-size:14px;
+	color:#ff0000;
+}
+.confirm-doc-box {
+	background:#E4F7E9;
+	color:#000;
+	padding:15px;
+	margin-bottom:20px;
+	border:2px solid #CEADAD;
+}
+.confirm-doc-box .noteinfo {
+	color:#000;
+}
+.table-payment th {
+	background:#f1f1f1;
+}
+.table-payment td {
+	background:#F9F9F9;
+}
+.btn_payment {
+	background:#AD4D4D;
+	color:#FFF;
+	border:1px solid #AD4D4D;
+}
+.regpre label {
+	font-weight:600;
+	color:#000;
+}
+.apstatus_box {
+	margin-bottom:20px;
+}
+.apstatus_box a {
+	background:#E17E75;
+	padding:6px 10px;
+	color:#fff;
+	border:1px solid #BF6158;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+}
+.apstatus_box a:hover {
+	background:#C95146;
+	color:#fff;
+}
+.btn_payment {
+	background:#B53428!important;
+	color:#fff!important;
+	border:1px solid #BF6158!important;
+	font-size:16px;
+}
+.table-paystatus th {
+	background:#f1f1f1;
+}
+.table-paystatus td {
+	background:#F9F9F9;
+}
+.application_success_box {
+	background:#7CAC4E;
+	padding:20px;
+	margin-bottom:20px;
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+}
+.application_success_box .icon-success {
+	margin-bottom:0px;
+}
+.application_success_box .icon-success .far {
+	font-size:40px;
+}
+.apgreen a {
+	background:#5F942B;
+	color:#fff;
+	border:1px solid #5F942B;
+}
+.apgreen a:hover {
+	background:#589021;
+	color:#fff;
+	border:1px solid #5F942B;
+}
+.linkback {
+	color:#be6464;
+}
+.docpg .fas {
+	font-size:30px;
+	color:#12AC57;
+}
+#header .header-nav-bar {
+	background:#E75200;
+	color:#fff;
+}
+#header .header-nav ul li a {
+	color:#fff!important;
+}
+ @media (max-width: 991px) {
+ #header .header-nav ul li a {
+ color:#fff!important;
+ background:#767676;
+}
+}
+.header-bottom {
+	background:#EDA994;
+}
+.btn_custom_yl {
+	background:#A3070A!important;
+	font-size:15px;
+	border:1px solid #BB1417!important;
+}
+.btn_custom_yl:hover {
+	background:#D01316;
+}
+.btn_custom_back {
+	background:#4C4C4C!important;
+	font-size:15px!important;
+	border:1px solid #6D6D6D!important;
+}
+.btn_custom_back:hover {
+	background:#6D6D6D!important;
+}
+.success_screen {
+	background:#BBE7D5;
+	padding:20px;
+	font-size:16px;
+	text-align:center;
+}
+.success_screen p {
+	color:#333333;
+}
+.back_login {
+	background:#A3070A!important;
+	font-size:15px;
+	border:1px solid #BB1417!important;
+	color:#fff;
+	padding:7px 14px;
+}
+.back_login:hover {
+	background:#E75200!important;
+	color:#fff;
+	text-decoration:none;
+}
+.back_login1 {
+	color:#A3070A;
+	font-size:16px;
+	font-weight:600;
+}
+.back_login1:hover {
+	color:#E75200;
+}
+.signup-box {
+	background:#FEEDD1;
+	padding: 15px;
+	border: 1px solid #D0D0D0;
+}
+.signup-box .heading h2 {
+	margin-bottom:10px;
+}
+.signup-box .heading h2 {
+	color:#A3070A;
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight:600;
+}
+.signup-box label {
+	color:#333;
+}
+.btn-custom-create {
+	background:#A3070A!important;
+	font-size:15px;
+	border:1px solid #BB1417!important;
+	color:#fff;
+	padding:7px 14px;
+}
+.btn-custom-create:hover {
+	background:#E75200!important;
+	color:#fff;
+	text-decoration:none;
+}
+.signup-box .req {
+	color:#ff0000;
+	font-size:12px;
+}
+.linka {
+	color:#333;
+}
+.linka:hover {
+	color:#A3070A;
+}
+.signup-box span.error {
+	color:#ff0000;
+}
+.dropdown-menu {
+	background-color:#D83616;
+	padding-top:0px!important;
+	padding-bottom:0px!important;
+}
+#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:hover > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:focus > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.active > a, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:active > a {
+	background-color:#E75200;
+}
+.welcome_heading {
+	color:#A3070A;
+	font-size:18px;
+	text-transform:uppercase;
+	font-weight:600;
+	margin-bottom:15px;
+}
+.dash_box {
+	background:#F6D0C3;
+	padding:30px 20px;
+	color:#A3070A;
+	text-align:center;
+	display:block;
+	border:1px solid #F0C2BA;
+	margin-bottom:25px;
+	display:block;
+}
+.dash_box a {
+	color:#A3070A;
+	font-size:18px;
+}
+.table-pro {
+	background:#FEEDD1;
+}
+.table-pro-head {
+	background:#D5654F;
+	color:#fff;
+	font-size:16px;
+}
+.notetext {
+	font-size:12px;
+}
+.ui-widget.ui-widget-content {
+	z-index:9999!important;
+}
+.page_date_title {
+	color:#049C3D;
+	font-size:20px;
+	margin-bottom:15px;
+	font-weight:600;
+}
+.slot-label {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	background:#A8DDBB;
+	margin-bottom:12px;
+	width:100%;
+}
+.slot-disable {
+	background:#F7E9E9;
+}
+.error_step {
+	color:#ff0000;
+	font-size:16px;
+	margin-bottom:13px;
+}
+.table-pro th {
+	background:#E94812;
+	color:#fff;
+	padding:6px 10px;
+}
+.table-pro td {
+	padding: 3px 10px;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+}
+.table-pro th {
+	padding: 3px 10px;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+}
+.table-trans th {
+	background:#CC3300;
+	color:#fff;
+}
+.table-trans {
+	font-size:14px;
+}
+.table-trans td {
+	padding: 3px 10px;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+}
+.table-trans th {
+	padding: 3px 10px;
+	vertical-align: top;
+	font-size:13px;
+	border-top: 1px solid #dee2e6;
+}
+.view_trans {
+	color:#990000;
+}
+.view_trans:hover {
+	color:#BD2020;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pagination .page-item.active .page-link {
+	background-color:#990000 !important;
+	border-color:#CC3300;
+}
+.pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	color:#000;
+}
+.pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	color:#000;
+}
+.back_trans {
+	color:#990000;
+	text-decoration:underline;
+}
+.back_login {
+	font-weight:600;
+	font-size:16px;
+	color:#fff;
+}
+.listnew {
+	padding:0px!important;
+	margin-left:12px;
+}
+.listnew li a {
+	color:#fff!important;
+}
+.listnew1 {
+	padding:0px;
+	margin-left:12px;
+}
+.listnew1 li a {
+	color:#333;
+	font-size:16px;
+}
+.downloadhere {
+	color:#333;
+	font-weight:600;
+}
+.change_pass_box {
+	background:#f2f2f2;
+	padding:20px 10px;
+	border:1px solid #ccc;
+}
+.change_pass_box label {
+	color:#333;
+	font-weight:600;
+}
+.change_pass_box label .req {
+	color:#ff0000;
+	font-size:12px;
+}
+.error {
+	color:#ff0000;
+}
+.room_box {
+    background: #f6f6f6;
+    padding: 15px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+}
+.room_box .roomtype_title {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    letter-spacing: .60px;
+    color: #242424;
+    text-transform: uppercase;
+}
+.room_box .room_price {
+    font-size: 16px;
+    color: #a0a0a0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.room_price span{font-size:13px; text-transform:none;}
+.room_desc{font-size:12px;    margin-bottom: 25px;}
+ .btn-room{
+    font-family: "Montserrat", sans-serif;
+    border-color: #ffb606;
+    background:#e75200;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    border-radius: 0px;
+    font-weight: 600;
+    padding: 8px 15px;
+    text-align: center;
+}
+.haddress{background:#B53A26; color:#fff; padding:4px 10px; font-family: "Montserrat", sans-serif; font-size:16px; margin-bottom:15px; margin-top:10px;}
+.totamt{ font-size:18px; color:#12A959;font-weight:600;}
+.totamt span{font-weight:600;color:#000;}
