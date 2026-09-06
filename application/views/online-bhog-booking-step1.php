@@ -74,7 +74,6 @@
 
   <div role="main" class="main">
 
-```
 <div class="container">
 
   <div class="row">
@@ -109,15 +108,13 @@
 
           <tr>
 
-            <td>MILK</td>
-
-            <td>1 PACKET</td>
+            <td colspan="2" class="text-center bg-light"><strong>सामान्य दिनों के लिए भोग सामग्री (General Days)</strong></td>
 
           </tr>
 
           <tr>
 
-            <td>GHEE</td>
+            <td>DESI GHEE</td>
 
             <td>1 kg</td>
 
@@ -125,133 +122,221 @@
 
           <tr>
 
-            <td>CURD</td>
+            <td>AATA</td>
 
-            <td>100 GM</td>
-
-          </tr>
-
-          <tr>
-
-            <td>HONEY</td>
-
-            <td>100 GM</td>
+            <td>1 kg</td>
 
           </tr>
 
           <tr>
 
-            <td>LONG + ELAICHI</td>
+            <td>SOOJI</td>
 
-            <td>10 – 10 GM EACH</td>
-
-          </tr>
-
-          <tr>
-
-            <td>PAN PATTA</td>
-
-            <td>5 PIECE</td>
+            <td>200 gm</td>
 
           </tr>
 
           <tr>
 
-            <td>KESAR</td>
+            <td>SUGAR</td>
 
-            <td>1 GM</td>
-
-          </tr>
-
-          <tr>
-
-            <td>DRY FRUIT</td>
-
-            <td>As per your suitability</td>
+            <td>1/2 kg</td>
 
           </tr>
 
           <tr>
 
-            <td>FRUITS</td>
+            <td>RICE</td>
 
-            <td>As per your suitability</td>
-
-          </tr>
-
-          <tr>
-
-            <td>TOWEL</td>
-
-            <td>1</td>
+            <td>1/2 kg</td>
 
           </tr>
 
           <tr>
 
-            <td>FLOWERS GULAB</td>
+            <td>KISHMISH</td>
 
-            <td>½ KG</td>
-
-          </tr>
-
-          <tr>
-
-            <td>HAAR</td>
-
-            <td>5</td>
+            <td>50 gm</td>
 
           </tr>
 
           <tr>
 
-            <td>KHULE PHOOL</td>
+            <td>ALMOND (BADAM)</td>
 
-            <td>&nbsp;</td>
-
-          </tr>
-
-          <tr>
-
-            <td>16 SHINGAR</td>
-
-            <td>As per your suitability</td>
+            <td>50 gm</td>
 
           </tr>
 
           <tr>
 
-            <td>NARIYAL</td>
+            <td>CASHEW (KAJU)</td>
 
-            <td>1</td>
-
-          </tr>
-
-          <tr>
-
-            <td>ITAR</td>
-
-            <td>1</td>
+            <td>50 gm</td>
 
           </tr>
 
           <tr>
 
-            <td>SHAKKAR</td>
+            <td>DAL / CHANA (WHITE/BLACK) / RAJMA</td>
 
-            <td>100 GM</td>
-
-          </tr>
-
-          <tr>
-
-            <td colspan="2">PROHIBITED COLOURS</td>
+            <td>1/2 kg</td>
 
           </tr>
 
           <tr>
 
-            <td colspan="2">GREEN, BLACK, BLUE, PURPLE (JAMUNI)</td>
+            <td>SEASONAL VEGETABLE</td>
+
+            <td>1 kg</td>
+
+          </tr>
+
+          <tr>
+
+            <td>PANEER (Optional)</td>
+
+            <td>250 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>MATAR DANA (Optional)</td>
+
+            <td>250 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>TOMATO</td>
+
+            <td>1/2 kg</td>
+
+          </tr>
+
+          <tr>
+
+            <td>GINGER</td>
+
+            <td>50 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>GREEN CHILLI</td>
+
+            <td>50 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>TURMERIC (HALDI)</td>
+
+            <td>50 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>DEGI MIRCH</td>
+
+            <td>50 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>SALT</td>
+
+            <td>1/2 kg</td>
+
+          </tr>
+
+          <tr>
+
+            <td>CUMIN (JEERA)</td>
+
+            <td>50 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>CORIANDER LEAVES (HARA DHANIYA)</td>
+
+            <td>1 Bunch</td>
+
+          </tr>
+
+          <tr>
+
+            <td>MILK</td>
+
+            <td>2 kg</td>
+
+          </tr>
+
+          <tr>
+
+            <td>MIX DRY FRUIT</td>
+
+            <td>1/2 kg</td>
+
+          </tr>
+
+          <tr>
+
+            <td>CLOVE & CARDAMOM (LONG, ELAICHI)</td>
+
+            <td>10 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td>SABUDANA</td>
+
+            <td>200 gm</td>
+
+          </tr>
+
+          <tr>
+
+            <td colspan="2" class="text-center bg-light"><strong>एकादशी वाले दिन के लिए भोग सामग्री (Ekadashi Day)</strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td>MIX FRUIT</td>
+
+            <td>5 kg</td>
+
+          </tr>
+
+          <tr>
+
+            <td colspan="2" class="text-center bg-light"><strong>नवरात्रों के लिए भोग सामग्री (Navratri Days)</strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td>DRY FRUIT (PANCHMEWA)</td>
+
+            <td>1/2 kg / Per Day</td>
+
+          </tr>
+
+          <tr>
+
+            <td>MIX FRUIT</td>
+
+            <td>5 kg / Per Day</td>
 
           </tr>
 
@@ -367,7 +452,6 @@
   </div>
 
 </div>
-```
 
   </div>
 

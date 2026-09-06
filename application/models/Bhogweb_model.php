@@ -4,9 +4,9 @@ class Bhogweb_model extends CI_Model {
  	parent::__construct(); 
  } 
 
-public function insertBhogBookingTemp($data,$bb_regid){
-	$bb_subdatetime=date("Y-m-d H:i:s");
-    $dataInsert=array('bb_regid'=>$bb_regid,'bb_bookfordate'=>$data['bb_bookfordate'],'bb_temple'=>$data['bb_temple'],'bb_name'=>$data['bb_name'],'bb_mobile'=>$data['bb_mobile'],'bb_aadhaar'=>$data['bb_aadhaar'],'bb_proof'=>$data['proof'],'bb_othermember'=>$data['bb_othermember'],'bb_member_name1'=>$data['bb_member_name1'],'bb_member_mobile1'=>$data['bb_member_mobile1'],'bb_member_aadhaar1'=>$data['bb_member_aadhaar1'],'bb_member_name2'=>$data['bb_member_name2'],'bb_member_mobile2'=>$data['bb_member_mobile2'],'bb_member_aadhaar2'=>$data['bb_member_aadhaar2'],'bb_member_name3'=>$data['bb_member_name3'],'bb_member_mobile3'=>$data['bb_member_mobile3'],'bb_member_aadhaar3'=>$data['bb_member_aadhaar3'],'bb_member_name4'=>$data['bb_member_name4'],'bb_member_mobile4'=>$data['bb_member_mobile4'],'bb_member_aadhaar4'=>$data['bb_member_aadhaar4'],'bb_member_name5'=>$data['bb_member_name5'],'bb_member_mobile5'=>$data['bb_member_mobile5'],'bb_member_aadhaar5'=>$data['bb_member_aadhaar5'],'bb_subdatetime'=>$bb_subdatetime,'bb_bhog_otp'=>$data['bb_bhog_otp'],'bb_bhog_otpexpiry'=>$data['bb_bhog_otpexpiry'],'bb_ipaddress'=>$data['bb_ipaddress']);
+public function insertBhogBookingTemp($data,$cb_regid){
+	$cb_subdatetime=date("Y-m-d H:i:s");
+    $dataInsert=array('cb_regid'=>$cb_regid,'cb_bookfordate'=>$data['cb_bookfordate'],'cb_temple'=>$data['cb_temple'],'cb_name'=>$data['cb_name'],'cb_mobile'=>$data['cb_mobile'],'cb_aadhaar'=>$data['cb_aadhaar'],'cb_proof'=>$data['proof'],'cb_othermember'=>$data['cb_othermember'],'cb_member_name1'=>$data['cb_member_name1'],'cb_member_mobile1'=>$data['cb_member_mobile1'],'cb_member_aadhaar1'=>$data['cb_member_aadhaar1'],'cb_member_name2'=>$data['cb_member_name2'],'cb_member_mobile2'=>$data['cb_member_mobile2'],'cb_member_aadhaar2'=>$data['cb_member_aadhaar2'],'cb_member_name3'=>$data['cb_member_name3'],'cb_member_mobile3'=>$data['cb_member_mobile3'],'cb_member_aadhaar3'=>$data['cb_member_aadhaar3'],'cb_member_name4'=>$data['cb_member_name4'],'cb_member_mobile4'=>$data['cb_member_mobile4'],'cb_member_aadhaar4'=>$data['cb_member_aadhaar4'],'cb_member_name5'=>$data['cb_member_name5'],'cb_member_mobile5'=>$data['cb_member_mobile5'],'cb_member_aadhaar5'=>$data['cb_member_aadhaar5'],'cb_subdatetime'=>$cb_subdatetime,'cb_bhog_otp'=>$data['cb_bhog_otp'],'cb_bhog_otpexpiry'=>$data['cb_bhog_otpexpiry'],'cb_ipaddress'=>$data['cb_ipaddress']);
 	// print_r($dataInsert); die();
 	$this->db->insert('tb_bhogbooking_temp',$dataInsert);
 	$insert_id=$this->db->insert_id();
@@ -16,40 +16,40 @@ public function insertBhogBookingTemp($data,$bb_regid){
 // 
 
 public function insertBhogBooking($data){
-	$bb_ipdate=date("Y-m-d");
-	$bb_subdatetime=date("Y-m-d H:i:s");
-	$bb_oldsystem=0;
-	$dataInsert=array('bb_orderno'=>$data['bb_orderno'],'bb_regid'=>$data['bb_regid'],'bb_bookfordate'=>$data['bb_bookfordate'],'bb_name'=>$data['bb_name'],'bb_mobile'=>$data['bb_mobile'],'bb_email'=>$data['bb_email'],'bb_address'=>$data['bb_address'],'bb_city'=>$data['bb_city'],'bb_paymethod'=>$data['bb_paymethod'],'bb_state'=>$data['bb_state'],'bb_pincode'=>$data['bb_pincode'],'bb_amount'=>$data['bb_amount'],'bb_subdatetime'=>$bb_subdatetime,'bb_temple'=>$data['bb_temple'],'bb_templename'=>$data['bb_templename'],'bb_aadhar'=>$data['bb_aadhar'],'bb_othermember'=>$data['bb_othermember'],'bb_devotee_name1'=>$data['bb_devotee_name1'],'bb_devotee_mobile1'=>$data['bb_devotee_mobile1'],'bb_devotee_aadhar1'=>$data['bb_devotee_aadhar1'],'bb_devotee_name2'=>$data['bb_devotee_name2'],'bb_devotee_mobile2'=>$data['bb_devotee_mobile2'],'bb_devotee_aadhar2'=>$data['bb_devotee_aadhar2'],'bb_devotee_name3'=>$data['bb_devotee_name3'],'bb_devotee_mobile3'=>$data['bb_devotee_mobile3'],'bb_devotee_aadhar3'=>$data['bb_devotee_aadhar3'],'bb_devotee_name4'=>$data['bb_devotee_name4'],'bb_devotee_mobile4'=>$data['bb_devotee_mobile4'],'bb_devotee_aadhar4'=>$data['bb_devotee_aadhar4'],'bb_devotee_name5'=>$data['bb_devotee_name5'],'bb_devotee_mobile5'=>$data['bb_devotee_mobile5'],'bb_devotee_aadhar5'=>$data['bb_devotee_aadhar5'],'bb_proof'=>$data['bb_proof'],'bb_oldsystem'=>$bb_oldsystem,'bb_ipdate'=>$bb_ipdate,'bb_ipaddress'=>$data['bb_ipaddress']);
+	$cb_ipdate=date("Y-m-d");
+	$cb_subdatetime=date("Y-m-d H:i:s");
+	$cb_oldsystem=0;
+	$dataInsert=array('cb_orderno'=>$data['cb_orderno'],'cb_regid'=>$data['cb_regid'],'cb_bookfordate'=>$data['cb_bookfordate'],'cb_name'=>$data['cb_name'],'cb_mobile'=>$data['cb_mobile'],'cb_email'=>$data['cb_email'],'cb_address'=>$data['cb_address'],'cb_city'=>$data['cb_city'],'cb_paymethod'=>$data['cb_paymethod'],'cb_state'=>$data['cb_state'],'cb_pincode'=>$data['cb_pincode'],'cb_amount'=>$data['cb_amount'],'cb_subdatetime'=>$cb_subdatetime,'cb_temple'=>$data['cb_temple'],'cb_templename'=>$data['cb_templename'],'cb_aadhar'=>$data['cb_aadhar'],'cb_othermember'=>$data['cb_othermember'],'cb_devotee_name1'=>$data['cb_devotee_name1'],'cb_devotee_mobile1'=>$data['cb_devotee_mobile1'],'cb_devotee_aadhar1'=>$data['cb_devotee_aadhar1'],'cb_devotee_name2'=>$data['cb_devotee_name2'],'cb_devotee_mobile2'=>$data['cb_devotee_mobile2'],'cb_devotee_aadhar2'=>$data['cb_devotee_aadhar2'],'cb_devotee_name3'=>$data['cb_devotee_name3'],'cb_devotee_mobile3'=>$data['cb_devotee_mobile3'],'cb_devotee_aadhar3'=>$data['cb_devotee_aadhar3'],'cb_devotee_name4'=>$data['cb_devotee_name4'],'cb_devotee_mobile4'=>$data['cb_devotee_mobile4'],'cb_devotee_aadhar4'=>$data['cb_devotee_aadhar4'],'cb_devotee_name5'=>$data['cb_devotee_name5'],'cb_devotee_mobile5'=>$data['cb_devotee_mobile5'],'cb_devotee_aadhar5'=>$data['cb_devotee_aadhar5'],'cb_proof'=>$data['cb_proof'],'cb_oldsystem'=>$cb_oldsystem,'cb_ipdate'=>$cb_ipdate,'cb_ipaddress'=>$data['cb_ipaddress']);
 	$this->db->insert('tb_bhogbooking',$dataInsert);
 	$insert_id=$this->db->insert_id();
 	return  $insert_id;			
 }
 
-	public function getPerBhogBookingTemp($bb_id){
-		$this->db->where("bb_id",$bb_id) ;
+	public function getPerBhogBookingTemp($cb_id){
+		$this->db->where("cb_id",$cb_id) ;
 		$this->db->from('tb_bhogbooking_temp');
-		$this->db->join('tb_temple','tb_temple.temple_id=tb_bhogbooking_temp.bb_temple','left');
+		$this->db->join('tb_temple','tb_temple.temple_id=tb_bhogbooking_temp.cb_temple','left');
 		$query=$this->db->get();
 		return $query->row();
  	}
 	/**************** OTP Code *********************************/
-	public function getPerOtp($bb_id,$bb_bhog_otp){
-		$this->db->where("bb_id",$bb_id);
-		$this->db->where("bb_bhog_otp",$bb_bhog_otp);
+	public function getPerOtp($cb_id,$cb_bhog_otp){
+		$this->db->where("cb_id",$cb_id);
+		$this->db->where("cb_bhog_otp",$cb_bhog_otp);
 		$query=$this->db->get('tb_bhogbooking_temp');
 		return $query->row();
  	}
-	 public function updateOtpResend($dataup,$bb_id){
-		$dataUpdate=array('bb_bhog_otp'=>$dataup['bb_bhog_otp'],'bb_bhog_otpexpiry'=>$dataup['bb_bhog_otpexpiry']);
-		$this->db->where('bb_id',$bb_id);
+	 public function updateOtpResend($dataup,$cb_id){
+		$dataUpdate=array('cb_bhog_otp'=>$dataup['cb_bhog_otp'],'cb_bhog_otpexpiry'=>$dataup['cb_bhog_otpexpiry']);
+		$this->db->where('cb_id',$cb_id);
 		return $this->db->update('tb_bhogbooking_temp',$dataUpdate); 
 	}
-	 public function upOtpVerSuccess($bb_id){
-		$bb_bhog_otp="";
-		$bb_bhog_otpexpiry=NULL;
-		$bb_bhog_otpverification=1;
-		$dataUpdate=array('bb_bhog_otp'=>$bb_bhog_otp,'bb_bhog_otpexpiry'=>$bb_bhog_otpexpiry,'bb_bhog_otpverification'=>$bb_bhog_otpverification);
-		$this->db->where('bb_id',$bb_id);
+	 public function upOtpVerSuccess($cb_id){
+		$cb_bhog_otp="";
+		$cb_bhog_otpexpiry=NULL;
+		$cb_bhog_otpverification=1;
+		$dataUpdate=array('cb_bhog_otp'=>$cb_bhog_otp,'cb_bhog_otpexpiry'=>$cb_bhog_otpexpiry,'cb_bhog_otpverification'=>$cb_bhog_otpverification);
+		$this->db->where('cb_id',$cb_id);
 		return $this->db->update('tb_bhogbooking_temp',$dataUpdate); 
 	}
 	
@@ -57,7 +57,7 @@ public function insertBhogBooking($data){
 	/******** Temple *********/
 	public function getAllTemple(){
 		$this->db->where("temple_status",1) ;
-		$query=$this->db->get('tb_temple');
+		$query=$this->db->get('tb_bhogtemple');
 		return $query->result();
  	}
 	
@@ -67,33 +67,33 @@ public function insertBhogBooking($data){
 		return $query->row();
  	}
 	/********Temple ***********/
-	public function getPerBhogBooking($bb_id){
-		$this->db->where("bb_id",$bb_id) ;
+	public function getPerBhogBooking($cb_id){
+		$this->db->where("cb_id",$cb_id) ;
 		$query=$this->db->get('tb_bhogbooking');
 		return $query->row();
  	}	
 	public function getAllBhogDateBooked($temple_id){
 	    $this->db->group_start();
-		$this->db->where("bb_temple",$temple_id) ;
+		$this->db->where("cb_temple",$temple_id) ;
 		$this->db->group_end();
 		   $this->db->group_start();
-		$this->db->where("bb_transstatus","SUCCESS");
-	$this->db->or_where("bb_transstatus","success");
+		$this->db->where("cb_transstatus","SUCCESS");
+	$this->db->or_where("cb_transstatus","success");
 		$this->db->group_end();
 		$query=$this->db->get('tb_bhogbooking');
 		return $query->result();
  	}
 	/*public function getAllProcessDateBhog($temple_id){
-		$this->db->where("bb_dateup",0) ;
-		$this->db->where("bb_temple",$temple_id) ;
+		$this->db->where("cb_dateup",0) ;
+		$this->db->where("cb_temple",$temple_id) ;
 		$query=$this->db->get('tb_bhogbooking');
 		return $query->result();
  	}		
 */
 
 public function getAllProcessDateBhog($temple_id){
-		$this->db->where("bb_up",0) ;
-		$this->db->where("bb_temple",$temple_id) ;
+		$this->db->where("cb_up",0) ;
+		$this->db->where("cb_temple",$temple_id) ;
 		$query=$this->db->get('tb_bhogbooking');
 		return $query->result();
  	}
@@ -101,84 +101,84 @@ public function getAllProcessDateBhog($temple_id){
 
 	 public function checkBookingFordate($temple_id,$bookfordate){
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_bookfordate",$bookfordate);
-		$this->db->where("bb_temple",$temple_id);
-		$this->db->where("bb_up",$temple_id);
+		$this->db->where("cb_bookfordate",$bookfordate);
+		$this->db->where("cb_temple",$temple_id);
+		$this->db->where("cb_up",$temple_id);
 		$query=$this->db->get();
 		return $query->num_rows();
  	}
 	
 	
-	 public function checknumber_row($bb_number){
+	 public function checknumber_row($cb_number){
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_mobile",$bb_number);
-// 		$this->db->or_where("bb_devotee_mobile2",$bb_number);
-// 		$this->db->or_where("bb_devotee_mobile3",$bb_number);
-// 		$this->db->or_where("bb_devotee_mobile4",$bb_number);
+		$this->db->where("cb_mobile",$cb_number);
+// 		$this->db->or_where("cb_devotee_mobile2",$cb_number);
+// 		$this->db->or_where("cb_devotee_mobile3",$cb_number);
+// 		$this->db->or_where("cb_devotee_mobile4",$cb_number);
 		$query=$this->db->get();
 		return $query->num_rows();
  	}
 	
-	public function checkdatenum($bb_number){
+	public function checkdatenum($cb_number){
 	    
 		$table=$this->db->from('tb_bhogbooking');
-		$query=$table->where("bb_mobile",$bb_number);
-// 		$query=$table->where("bb_bookfordate",$month[0]);
+		$query=$table->where("cb_mobile",$cb_number);
+// 		$query=$table->where("cb_bookfordate",$month[0]);
 // 		$this->db->where_in('username', $names);
         $query=$table->get();
 		return $query->num_rows();
  	}
-	public function count_bhogdate($bb_bookfordate,$temple_id){
+	public function count_bhogdate($cb_bookfordate,$temple_id){
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_bookfordate",$bb_bookfordate);
-		$this->db->where("bb_temple",$temple_id);
-		$this->db->where("bb_transstatus","SUCCESS");
+		$this->db->where("cb_bookfordate",$cb_bookfordate);
+		$this->db->where("cb_temple",$temple_id);
+		$this->db->where("cb_transstatus","SUCCESS");
 		$query=$this->db->get();
 		return $query->num_rows();
  	}
-	public function count_processing($bb_bookfordate,$temple_id){
+	public function count_processing($cb_bookfordate,$temple_id){
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_bookfordate",$bb_bookfordate);
-		$this->db->where("bb_temple",$temple_id);
-		$this->db->where("bb_up",0);
+		$this->db->where("cb_bookfordate",$cb_bookfordate);
+		$this->db->where("cb_temple",$temple_id);
+		$this->db->where("cb_up",0);
 		$query=$this->db->get();
 		return $query->num_rows();
  	}
-	/* public function updatetempchbook($bb_regid,$dataup){
+	/* public function updatetempchbook($cb_regid,$dataup){
 		
-		$dataUpdate=array('bb_bhog_price'=>$dataup['bhogprice'],'bb_bhog_from_board'=>$dataup['bb_bhog_from_board']);
-		$this->db->where('bb_id',$bb_regid);
+		$dataUpdate=array('cb_bhog_price'=>$dataup['bhogprice'],'cb_bhog_from_board'=>$dataup['cb_bhog_from_board']);
+		$this->db->where('cb_id',$cb_regid);
 		return $this->db->update('tb_bhogbooking_temp',$dataUpdate); 
 	}*/
 	
 	
-	public function upTxnByRefNo($dataup,$bb_orderno){
-		$dataUpdate=array('bb_transstatus'=>$dataup['bb_transstatus'],'bb_transdate'=>$dataup['bb_transdate'],'bb_bankrefno'=>$dataup['bb_bankrefno'],'bb_statusdesc'=>$dataup['bb_statusdesc'],'bb_txnrefno'=>$dataup['bb_txnrefno'],'bb_up'=>$dataup['bb_up'],'bb_dateup'=>$dataup['bb_dateup'],'bb_statuscode'=>$dataup['bb_statuscode']);
-		$this->db->where('bb_orderno',$bb_orderno);
+	public function upTxnByRefNo($dataup,$cb_orderno){
+		$dataUpdate=array('cb_transstatus'=>$dataup['cb_transstatus'],'cb_transdate'=>$dataup['cb_transdate'],'cb_bankrefno'=>$dataup['cb_bankrefno'],'cb_statusdesc'=>$dataup['cb_statusdesc'],'cb_txnrefno'=>$dataup['cb_txnrefno'],'cb_up'=>$dataup['cb_up'],'cb_dateup'=>$dataup['cb_dateup'],'cb_statuscode'=>$dataup['cb_statuscode']);
+		$this->db->where('cb_orderno',$cb_orderno);
 		return $this->db->update('tb_bhogbooking',$dataUpdate); 
 	}
-	public function getBhogBookingByOrder($bb_orderno){
-		$this->db->where("bb_orderno",$bb_orderno) ;
+	public function getBhogBookingByOrder($cb_orderno){
+		$this->db->where("cb_orderno",$cb_orderno) ;
 		$query=$this->db->get('tb_bhogbooking');
 		return $query->row();
  	}	
-	public function upBhogBookingStatus($dataup,$bb_id){
-		$dataUpdate=array('bb_transstatus'=>$dataup['bb_transstatus'],'bb_statusdesc'=>$dataup['bb_statusdesc'],'bb_transdate'=>$dataup['bb_transdate'],'bb_paymode'=>$dataup['bb_paymode'],'bb_bankrefno'=>$dataup['bb_bankrefno'],'bb_statusdesc'=>$dataup['bb_statusdesc'],'bb_up'=>1,'bb_dateup'=>$dataup['bb_dateup']);
-		$this->db->where('bb_id',$bb_id);
+	public function upBhogBookingStatus($dataup,$cb_id){
+		$dataUpdate=array('cb_transstatus'=>$dataup['cb_transstatus'],'cb_statusdesc'=>$dataup['cb_statusdesc'],'cb_transdate'=>$dataup['cb_transdate'],'cb_paymode'=>$dataup['cb_paymode'],'cb_bankrefno'=>$dataup['cb_bankrefno'],'cb_statusdesc'=>$dataup['cb_statusdesc'],'cb_up'=>1,'cb_dateup'=>$dataup['cb_dateup']);
+		$this->db->where('cb_id',$cb_id);
 		return $this->db->update('tb_bhogbooking',$dataUpdate); 
 	}
-	public function delPerTempBhogBooking($bb_id){
-		$this->db->where('bb_id',$bb_id);
+	public function delPerTempBhogBooking($cb_id){
+		$this->db->where('cb_id',$cb_id);
 		$query=$this->db->delete('tb_bhogbooking_temp');	
 		return $query;
 	}
 	
 	
 	/************* Inactivate Date Setting */
-	public function count_inactivedate($bb_bookfordate,$temple_id){
+	public function count_inactivedate($cb_bookfordate,$temple_id){
 		$this->db->from('tb_bhogdatesetting');
 		$this->db->where("dset_templeid",$temple_id);
-		$this->db->where("dset_date",$bb_bookfordate);
+		$this->db->where("dset_date",$cb_bookfordate);
 		$query=$this->db->get();
 		return $query->num_rows();
  	}
@@ -191,108 +191,108 @@ public function getAllProcessDateBhog($temple_id){
 		return $query->result();
  	}
 	/***** Check For Mobile Six Month*****/
-	public function chkforbhogmob($bb_mobile,$temple_id){
+	public function chkforbhogmob($cb_mobile,$temple_id){
 		//$current_date=date("Y-m-d");
 		//$previous_date=date('Y-m-d', strtotime($current_date. ' + 180 days'));
 		$this->db->from('tb_bhogbooking');
-			$this->db->order_by("bb_id", "DESC");
-		$this->db->where("bb_temple",$temple_id);
+			$this->db->order_by("cb_id", "DESC");
+		$this->db->where("cb_temple",$temple_id);
 		$this->db->group_start();
-		$this->db->where("bb_mobile",$bb_mobile);
-		$this->db->or_where("bb_devotee_mobile1",$bb_mobile);
-		$this->db->or_where("bb_devotee_mobile2",$bb_mobile);
-		$this->db->or_where("bb_devotee_mobile3",$bb_mobile);
-		$this->db->or_where("bb_devotee_mobile4",$bb_mobile);
-		$this->db->or_where("bb_devotee_mobile5",$bb_mobile);
+		$this->db->where("cb_mobile",$cb_mobile);
+		$this->db->or_where("cb_devotee_mobile1",$cb_mobile);
+		$this->db->or_where("cb_devotee_mobile2",$cb_mobile);
+		$this->db->or_where("cb_devotee_mobile3",$cb_mobile);
+		$this->db->or_where("cb_devotee_mobile4",$cb_mobile);
+		$this->db->or_where("cb_devotee_mobile5",$cb_mobile);
 		$this->db->group_end();
 		//$this->db->group_start();
-		//$this->db->where("bb_subdatetime >=",$previous_date);
+		//$this->db->where("cb_subdatetime >=",$previous_date);
 	//	$this->db->group_end();
 		$this->db->group_start();
-		$this->db->where("bb_transstatus",'SUCCESS');
+		$this->db->where("cb_transstatus",'SUCCESS');
 		$this->db->group_end();
 	
 		$query=$this->db->get();
 		return $query->row();
  	}
 	/******* Check For Main Account for six month *****/
-	public function chkforbhogtemple($bb_temple,$custsesid){
+	public function chkforbhogtemple($cb_temple,$custsesid){
 	    //echo $custsesid;
 	  //  echo "<br/>";
 		//$current_date=date("Y-m-d");
 		//$previous_date=date('Y-m-d', strtotime($current_date. ' + 180 days'));
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_temple",$bb_temple);
+		$this->db->where("cb_temple",$cb_temple);
 		$this->db->group_start();
-		$this->db->where("bb_regid",$custsesid);
+		$this->db->where("cb_regid",$custsesid);
 		$this->db->group_end();
 	//	$this->db->group_start();
-		//$this->db->where("bb_subdatetime >=",$previous_date);
+		//$this->db->where("cb_subdatetime >=",$previous_date);
 	//	$this->db->group_end();
 		$this->db->group_start();
-		$this->db->where("bb_transstatus",'SUCCESS');
+		$this->db->where("cb_transstatus",'SUCCESS');
 		$this->db->group_end();
-		$this->db->order_by("bb_id", "DESC");
+		$this->db->order_by("cb_id", "DESC");
 		$query=$this->db->get();
 		return $query->row();
  	}
 	/********** Aadhar Card Check ********/
-	public function chkforbhogaadhaar($bb_aadhaar,$temple_id){
+	public function chkforbhogaadhaar($cb_aadhaar,$temple_id){
 	//	$current_date=date("Y-m-d");
 		//$previous_date=date('Y-m-d', strtotime($current_date. ' + 180 days'));
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_temple",$temple_id);
+		$this->db->where("cb_temple",$temple_id);
 		$this->db->group_start();
-		$this->db->where("bb_aadhar",$bb_aadhaar);
-		$this->db->or_where("bb_devotee_aadhar1",$bb_aadhaar);
-		$this->db->or_where("bb_devotee_aadhar2",$bb_aadhaar);
-		$this->db->or_where("bb_devotee_aadhar3",$bb_aadhaar);
-		$this->db->or_where("bb_devotee_aadhar4",$bb_aadhaar);
-		$this->db->or_where("bb_devotee_aadhar5",$bb_aadhaar);
+		$this->db->where("cb_aadhar",$cb_aadhaar);
+		$this->db->or_where("cb_devotee_aadhar1",$cb_aadhaar);
+		$this->db->or_where("cb_devotee_aadhar2",$cb_aadhaar);
+		$this->db->or_where("cb_devotee_aadhar3",$cb_aadhaar);
+		$this->db->or_where("cb_devotee_aadhar4",$cb_aadhaar);
+		$this->db->or_where("cb_devotee_aadhar5",$cb_aadhaar);
 		$this->db->group_end();
 	//	$this->db->group_start();
-		//$this->db->where("bb_subdatetime >=",$previous_date);
+		//$this->db->where("cb_subdatetime >=",$previous_date);
 	//	$this->db->group_end();
 		$this->db->group_start();
-		$this->db->where("bb_transstatus",'SUCCESS');
+		$this->db->where("cb_transstatus",'SUCCESS');
 		$this->db->group_end();
-		$this->db->order_by("bb_id", "DESC");
+		$this->db->order_by("cb_id", "DESC");
 		$query=$this->db->get();
 		return $query->row();
  	}
 	public function getLastBookFromThisIp($temple_id,$ip){
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_temple",$temple_id);
-		$this->db->where("bb_ipaddress",$ip);
-		$this->db->where("bb_transstatus",'SUCCESS');
-		$this->db->order_by("bb_id", "DESC");
+		$this->db->where("cb_temple",$temple_id);
+		$this->db->where("cb_ipaddress",$ip);
+		$this->db->where("cb_transstatus",'SUCCESS');
+		$this->db->order_by("cb_id", "DESC");
 		$query=$this->db->get();
 		return $query->row();
  	}
-	public function getLastBookFromThisAccount($temple_id,$bb_regid){
+	public function getLastBookFromThisAccount($temple_id,$cb_regid){
 		$this->db->from('tb_bhogbooking');
-		$this->db->where("bb_temple",$temple_id);
-		$this->db->where("bb_regid",$bb_regid);
-		$this->db->where("bb_transstatus",'SUCCESS');
-		$this->db->order_by("bb_id", "DESC");
+		$this->db->where("cb_temple",$temple_id);
+		$this->db->where("cb_regid",$cb_regid);
+		$this->db->where("cb_transstatus",'SUCCESS');
+		$this->db->order_by("cb_id", "DESC");
 		$query=$this->db->get();
 		return $query->row();
  	}
-	public function upPerBhogParms($datapayser,$bb_id){
-		$dataUpdate=array('bb_payparam'=>$datapayser);
-		$this->db->where('bb_id',$bb_id);
+	public function upPerBhogParms($datapayser,$cb_id){
+		$dataUpdate=array('cb_payparam'=>$datapayser);
+		$this->db->where('cb_id',$cb_id);
 		return $this->db->update('tb_bhogbooking',$dataUpdate); 
 	}
 	public function getAllPendingTxn(){
 	
-		$this->db->where("bb_paymethod",3);
-		$this->db->where("bb_up",0);
+		$this->db->where("cb_paymethod",3);
+		$this->db->where("cb_up",0);
 		$current_time=date('Y-m-d H:i:s');
     	$time_limit=date('Y-m-d H:i:s', strtotime('-20 minutes', strtotime($current_time)));
-        $this->db->where('bb_subdatetime <=', $time_limit);
-        //$this->db->where("bb_statuscode !=",0300);
-		$this->db->order_by("bb_id", "DESC");
-	//	$this->db->order_by("bb_paymethod", "DESC");
+        $this->db->where('cb_subdatetime <=', $time_limit);
+        //$this->db->where("cb_statuscode !=",0300);
+		$this->db->order_by("cb_id", "DESC");
+	//	$this->db->order_by("cb_paymethod", "DESC");
 		$query=$this->db->get('tb_bhogbooking');
 		return $query->result();
  	}		

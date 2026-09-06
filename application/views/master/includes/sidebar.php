@@ -72,6 +72,25 @@
        </div>
     </div>
 	 </li>
+
+     <li class="nav-item"> <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBhogDateManage" aria-expanded="true" aria-controls="collapseBhogDateManage"> <i class="fas fa-calendar-alt"></i> <span>Bhog Date Settings </span> </a>
+    <div id="collapseBhogDateManage" class="collapse" aria-labelledby="headingPages" data-parent="#collapseBhogDateManage">
+      <div class="bg-white py-2 collapse-inner rounded"> <a class="collapse-item" href="<?php echo site_url("master/bhog-datemgmt/manage");  ?>">View All</a>  <a class="collapse-item" href="<?php echo site_url("master/bhog-datemgmt/add");  ?>">Add New</a>
+      </div>
+    </div>
+  </li>
+
+
+    <li class="nav-item"> <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBhog" aria-expanded="true" aria-controls="collapseBhog"> <i class="fas fa-calendar-alt"></i> <span>Bhog Booking</span> </a>
+    <div id="collapseBhog" class="collapse" aria-labelledby="headingPages" data-parent="#collapseBhog">
+      <div class="bg-white py-2 collapse-inner rounded"> <a class="collapse-item" href="<?php echo site_url("master/bhog-booking/manage");  ?>">View Bhog Bookings</a>
+      
+      <a class="collapse-item" href="<?php echo site_url("master/bhog-booking/search");  ?>">Search & Export</a>
+      <a class="collapse-item" href="<?php echo site_url("master/bhog-booking");  ?>">Book Bhog</a>
+      
+       </div>
+    </div>
+	 </li>
      <?php } ?>
 	 
   

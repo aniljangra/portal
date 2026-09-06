@@ -180,6 +180,11 @@ $route['master/chola-datemgmt/manage']='master/CholadatesettingController/manage
 $route['master/chola-datemgmt/add']='master/CholadatesettingController/add_datesetting';
 $route['master/chola-datemgmt/remove/(:any)']='master/CholadatesettingController/remove_datesetting/$1';
 
+/********** Bhog Date Settings ***/
+$route['master/bhog-datemgmt/manage']='master/BhogdatesettingController/manage_datesetting';
+$route['master/bhog-datemgmt/add']='master/BhogdatesettingController/add_datesetting';
+$route['master/bhog-datemgmt/remove/(:any)']='master/BhogdatesettingController/remove_datesetting/$1';
+
 
 
 
