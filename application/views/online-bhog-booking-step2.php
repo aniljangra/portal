@@ -177,6 +177,42 @@ Change Temple </a>
 
 </div>
 
+<div class="form-group col-md-12 col-sm-12 col-xs-12">
+
+
+
+<div class="form-check form-check-inline">
+    <input
+        class="form-check-input"
+        type="radio"
+        name="cb_samagri"
+        id="cb_samagri_yes"
+        value="11000"
+        <?= set_value('cb_samagri', '0') == '11000' ? 'checked' : ''; ?>
+    >
+    <label class="form-check-label" for="cb_samagri_yes">
+        Samagri provided by temple (Rs. 11000/-)
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+    <input
+        class="form-check-input"
+        type="radio"
+        name="cb_samagri"
+        id="cb_samagri_no"
+        value="0"
+        <?= set_value('cb_samagri', '0') == '0' ? 'checked' : ''; ?>
+    >
+    <label class="form-check-label" for="cb_samagri_no">
+        Samagri bring by there own (Rs. 0/-)
+    </label>
+</div>
+
+<?php echo form_error('cb_samagri'); ?>
+
+</div>
+
 </div>
 
 <div class="row">

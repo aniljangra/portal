@@ -338,12 +338,16 @@ class Bhogpage_Controller extends CI_Controller {
 			'file_name'=>time().'_'.$cb_proof
 		);
 
+		
+
 		$this->load->library('upload',$config);
 
 		if($this->form_validation->run()==true && $this->upload->do_upload('cb_proof')){
 
 			$data=$this->input->post();
+			// print_r($data); die;
 			$cb_mobile=$data['cb_mobile'];
+			$cb_samagri=$data['cb_samagri'];
 
 			$docup3=$this->upload->data();
 			$proof="media/document/".$docup3['raw_name'].$docup3['file_ext'];
@@ -830,7 +834,7 @@ class Bhogpage_Controller extends CI_Controller {
 
 		$arr['bhogtemp']=$this->bhogmod->getPerBhogBookingTemp($cb_id);
 
-		$amount=$arr['bhogtemp']->temple_fee;	
+		$amount=$arr['bhogtemp']->temple_fee + $arr['bhogtemp']->cb_samagri;	
 		
 		/***** Check For Verification *******/
 		$cb_bhog_otpverification=$arr['bhogtemp']->cb_bhog_otpverification;

@@ -79,7 +79,7 @@ echo form_hidden('temple_id',$templedata->temple_id);
                 
                 <tr>
                   <td width="42%"><strong>Service Charge</strong></td>
-                  <td width="41%">Rs. <?php echo $bhogtemp->temple_fee; ?>/- </td>
+                  <td width="41%">Rs. <?php echo $bhogtemp->temple_fee + $bhogtemp->cb_samagri; ?>/- </td>
                   </tr>
                
                 
