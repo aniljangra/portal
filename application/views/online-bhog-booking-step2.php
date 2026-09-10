@@ -179,20 +179,24 @@ Change Temple </a>
 
 <div class="form-group col-md-12 col-sm-12 col-xs-12">
 
-
-
 <div class="form-check form-check-inline">
-    <input
-        class="form-check-input"
-        type="radio"
-        name="cb_samagri"
-        id="cb_samagri_yes"
-        value="11000"
-        <?= set_value('cb_samagri', '0') == '11000' ? 'checked' : ''; ?>
-    >
-    <label class="form-check-label" for="cb_samagri_yes">
-        Samagri provided by temple (Rs. 11000/-)
-    </label>
+
+<?php   
+echo form_input(array(
+    'name'  => 'cb_samagri',
+    'id'    => 'cb_samagri_yes',
+    'type'  => 'radio',
+    'class' => 'form-check-input',
+    'value' => $templedata->temple_samagri,
+    'checked' => set_value(
+        'cb_samagri',
+        '0'
+    ) == $templedata->temple_samagri
+)); ?>
+
+<label class="form-check-label" for="cb_samagri_yes">
+    Samagri provided by temple (Rs. <?= $templedata->temple_samagri; ?>/-)
+</label>
 </div>
 
 <div class="form-check form-check-inline">

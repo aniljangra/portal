@@ -63,7 +63,7 @@ public function insertBhogBooking($data){
 	
 	 public function getPerTemple($temple_id){
 		$this->db->where("temple_id",$temple_id) ;
-		$query=$this->db->get('tb_temple');
+		$query=$this->db->get('tb_bhogtemple');
 		return $query->row();
  	}
 	/********Temple ***********/
